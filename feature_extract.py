@@ -20,6 +20,7 @@ X_test_vec = vectorizer.transform(X_test)
 # Model training
 model = RandomForestClassifier(n_estimators=10, random_state=42)
 model.fit(X_train_vec, y_train)
+# trained with 10 trees
 
 # Evaluation
 y_pred = model.predict(X_test_vec)
